@@ -1,32 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Honey Production</title>
-    </head>
-    <body>
-        <header>
-            <nav class="top-nav">
-                <a class="logo" href="index.html">
-                    <img src="img/logotype.svg" alt="Logotype">
-                </a>
-                <div class="menu">
-                    <a href="#about">About Us</a>
-                    <a href="#honey-types">Types of Honey</a>
-                    <a href="#store">Store</a>
-                    <a href="#testimonials">Testimonials</a>
-                    <a href="#contacts">Contact Us</a>
-                    <a href="#store" class="button outline-button">Buy Honey</a>
-                </div>
-            </nav>
-            <div class="banner">
-                <p>100% organic honey</p>
-                <h1>honeybee</h1>
-                <p>We offer a great assortment of pure raw honey from our swaths in California. Order honey from our honeycombs!</p>
-                <a href="#store" class="button">Buy now</a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+<!-- <section class="container">
+    <div class="wrapper-testimonials">
+        <h2 class="section__title">Testimonials</h2>
+        <p class="section__subtitle">What Our Wine-Lovers Say</p>
+        <img src="img/text-separator.svg" alt="Text separator">
+        <div class="section__text">Wine is a bottled poetry. Read some stories from our customers below.</div>
+    </div>
+    <div class="carousel">
+        <div class="slide">
+            <p>“I really like to please myself with good wine with a rich taste. Therefore, from time to time, I order
+                wine directly from the CaliWines winery. I also buy Chardonnay and Cabernet for family holidays. We are
+                completely delighted with the amazing taste of these wines, which we want to enjoy endlessly.”</p>
+        </div>
+        <div class="slide">
+            <p>“We were to hold a responsible event with a buffet table and wanted to surprise our guests with some
+                local products. I recalled that we have the CaliWines winery in California and ordered 10 bottles of
+                Chardonnay. Our guests were delighted and asked for the name of the producer!”</p>
+        </div>
+        <div class="slide">
+            <p>“Our restaurant has been cooperating with this winery for over 10 years. We order the whole range of
+                wines from them. We are completely satisfied with the quality of the wine supplied to us. And our guests
+                often choose CaliWines from our wine menu.”</p>
+        </div>
+    </div>
+</section> -->
+
+
+
+
+<section class="container">
+    <div class="section__question">
+        <div class="faq">
+            <h2 class="section__title">HQ</h2>
+            <p class="section__subtitle">Have a Question?</p>
+            <img class="text-separator-img"src="img/text-separator.svg" alt="Text separator">
+            <details class="faq__inner">
+                <summary class="faq__item">Are you a wholesale wine supplier?</summary>
+                <p class="faq__text">Our winery produces craft wine. Bulk orders are possible, but lots cannot be large.</p>
+            </details>
+            <details class="faq__inner">
+                <summary class="faq__item">Do you ship wine within the USA?</summary>
+                <p class="faq__text">Yes, we ship your orders to any state and city in the United States, as well as abroad.</p>
+            </details>
+            <details class="faq__inner">
+                <summary class="faq__item">How many varieties are there in your winery?</summary>
+                <p class="faq__text">Our winery offers wine-lovers more than 10 different varieties of wines with different aging periods.</p>
+            </details>
+            <details class="faq__inner">
+                <summary class="faq__item">Do you advise on the choice of wine?</summary>
+                <p class="faq__text">Yes. Our winery experts will tell you more about the varieties and help you choose the best option for you.</p>
+            </details>
+            <details class="faq__inner">
+                <summary class="faq__item">Where are your vineyards located?</summary>
+                <p class="faq__text">We are located in the Napa Valley, America's most famous wine region.</p>
+            </details>
+        </div>
+        <img class="section__img" src="img/bottle.png" alt="Wine bottle">
+    </div><!-- closed  section-question-->
+
+    <div class="section__features">
+        <div class="features__item">
+            <img src="imgshipping.svg" alt="Shipping car" class="features__icon">
+            <h5 class="features__title">Fast & Free Shipping</h5>
+            <div class="features__rext">We offer free delivery to any American city and abroad for all orders over $99.</div>
+        </div>
+        <div class="features__item">
+            <img src="imgcredit-cards.svg" alt="Credit Cards" class="features__icon">
+            <h5 class="features__title">Secure Payments</h5>
+            <div class="features__rext">We accept Visa and MasterCard, PayPal, Trustly, and other payment methods.</div>
+        </div>
+        <div class="features__item">
+            <img src="imggrape.svg" alt="Grape" class="features__icon">
+            <h5 class="features__title">Eco-Friendly</h5>
+            <div class="features__rext">We do not use chemical additives or aggressive fertilizers. Our wines are 100% organic.</div>
+        </div>
+        <div class="features__item">
+            <img src="imgdiscount.svg" alt="Discount" class="features__icon">
+            <h5 class="features__title">Discount System</h5>
+            <div class="features__rext">Sign up to get a 15% discount on your next order and get advantage of our special offers.</div>
+        </div>
+    </div> <!-- closed features -->
+</section>
+
+
+<!-- Join
+===================== -->
+
+<section class="section container">
+    <div class="wrapper-join">
+        <div>
+            <h2 class="section__title">Join</h2>
+            <p class="section__subtitle">Join Our Newsletter Now</p>
+            <div class="section__text">Learn more about wines and our special offers with our weekly digests.</div>
+        </div>
+        <form class="join-form" method="POST" action="#">
+            <input class="form__text" type="email" placeholder="Enter your email address here" required name="email">
+            <input class="form__button" type="button" value="Submit">
+        </form>
+    </div>
+</section>
+
+<!-- Footer
+=====================>= -->
+<footer class="footer container">
+    <div class="footer__inner">
+        <div class="footer__item">
+            <h5 class="footer__title">Contact Us</h5>
+            <address class="footer__address">
+                <div>caliwines@email.com</div>
+                <div>+1 (234) 567 89 00</div>
+                <div>1111 White Ln, St Helena, CA 94574</div>
+            </address>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img class="social__img" src="img/social-icon/twitter-icon.svg" alt="Twitter">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img class="social__img" src="img/social-icon/youtube-icon.svg" alt="YouTube">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img class="social__img" src="img/social-icon/facebook-icon.svg" alt="Facebook">
+                    </a>
+                </li>
+                <li class="social__item">
+                    <a href="#" class="social__link">
+                        <img class="social__img" src="img/social-icon/instagram-icon.svg" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer__item">
+            <h5 class="footer__title">Information</h5>
+            <div class="footer__link">
+                <a href="#">History</a>
+                <a href="$">About Us</a>
+                <a href="$">Awards</a>
+                <a href="$">FAQ</a>
             </div>
-        </header>
-    
-    </body>
-    </html>
+        </div>
+        <div class="footer__item">
+            <h5 class="footer__title">Shop</h5>
+            <div class="footer__link">
+                <a href="#">Best Deals</a>
+                <a href="$">All Wines</a>
+                <a href="$">Delivery Information</a>
+                <a href="$">Terms & Conditions</a>
+            </div>
+        </div>
+        <div class="footer__item">
+            <h5 class="footer__title">Instagram</h5>
+            <div class="footer__img">
+                <img src="img/instagram-contents/cork.png" alt="cork">
+                <img src="img/instagram-contents/man-with-glass.png" alt="man with glass">
+                <img src="img/instagram-contents/red-wine-bottle.png" alt="wine bottle">
+                <img src="img/instagram-contents/three-bottles-of-wine.png" alt="three bottles of wine">
+                <img src="img/instagram-contents/white-grape.png" alt="white grape">
+                <img src="img/instagram-contents/glass-of-wine.png" alt="glass of wine">
+            </div>
+        </div>
+    </div>
+
+    <!--Copyright
+    ============== -->
+    <div class="copyright">
+        <div class="copyright_text">
+            <div>© Created by</div>
+            <div>All rights Reserved</div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>
