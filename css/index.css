@@ -37,8 +37,6 @@ p {
 
 .have-question__inner {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
   max-height: 740px
 }
 
