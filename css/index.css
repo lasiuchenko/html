@@ -37,6 +37,7 @@ p {
 
 .have-question__inner {
   display: flex;
+  flex-wrap: wrap;
   max-height: 700px;
 }
 
