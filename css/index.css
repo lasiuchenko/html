@@ -19,7 +19,9 @@ p {
 :root {
   color: #fff;
   --secondary-color: #c8693a;
-  --gray-color: #898082;
+  --gray-color: #7d7577d7;
+  --brown-color: #1a1512;
+  --dark-brown-color: #140f0f;
   --great-vibes-font: "Great Vibes", cursive;
   --prata-font: "Prata", serif;
   --rubik-font: "Rubik", sans-serif;
@@ -45,7 +47,8 @@ p {
   flex: 2 400px;
 }
 
-.have-question__title {
+.have-question__title,
+.join-part__title {
   color: var(--secondary-color);
   font-family: var(--great-vibes-font);
   font-size: 28px;
@@ -106,25 +109,215 @@ p {
 /* Features */
 .features {
   display: flex;
-  align-items: center;
+  padding: 50px 0 100px;
 }
 
 .features__item {
-  flex: 1;
+  width: 25%;
   margin-left: 25px;
+  text-align: start;
+}
+.features__item:first-child {
+  margin-left: 0;
 }
 
-.features-title {
+.features-image {
+  fill: var(--secondary-color);
+  width: 60px;
+  height: 60px;
+}
+
+.features-title,
+.footer-part__title {
+  margin-top: 20px;
   font-family: var(--prata-font);
   font-size: 22px;
   font-weight: 400;
   line-height: 33px;
 }
 
+.text-divider {
+  margin: 15px 0;
+  content: "";
+  background-color: var(--secondary-color);
+  height: 1px;
+  display: block;
+  width: 15%;
+}
+
 .features-text {
+  margin-top: 20px;
   font-family: var(--rubik-font);
   color: var(--gray-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 26px;
+}
+
+/* footer*/
+
+.footer {
+  padding: 100px 0 50px;
+  background-color: var(--brown-color);
+}
+
+.join-part {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--gray-color);
+}
+
+.join-part__subtitle {
+  margin-top: 20px;
+  font-family: var(--prata-font);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 42px;
+}
+
+.join-part__text {
+  margin-top: 20px;
+  font-family: var(--rubik-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+input {
+  width: 100%;
+  margin: 12px;
+  padding: 16px 25px;
+  border: none;
+}
+
+.form__text {
+  background-color: #252120;
+  font-family: var(--rubik-font);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.form__button {
+  background-color: var(--secondary-color);
+  font-family: var(--rubik-font);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 15px;
+
+  transition: background 0.2s linear;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  background-color: #b14f1e;
+}
+
+.footer-part {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-part__inner {
+  width: 25%;
+}
+
+.footer-part__inner:first-child {
+  margin-left: 0;
+}
+
+.footer-part__address {
+  margin-top: 20px;
+  font-family: var(--rubik-font);
+  color: var(--gray-color);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+}
+
+.address {
+  margin: 15px 0;
+}
+
+.contact {
+  color: var(--gray-color);
+  text-decoration: none;
+}
+
+.footer-part__social {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 15px;
+}
+
+.social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+
+  border: 1px solid var(--secondary-color);
+}
+
+.social_item:first-child {
+  margin-left: 0;
+}
+
+.social_icon {
+  height: 18px;
+  fill: var(--secondary-color);
+  transition: fill 0.1s linear;
+}
+
+.footer-part__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-part__link-item {
+  font-family: var(--rubik-font);
+  color: var(--gray-color);
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 22px;
+  text-decoration: none;
+  padding-bottom: 15px;
+}
+
+.footer-part__link-item:last-child {
+  padding-bottom: 0;
+}
+
+.footer-part__img {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row-gap: 15px;
+}
+
+.instagram-image {
+  width: 75px;
+  height: 75px;
+}
+
+.copyright {
+  padding: 20px 0;
+  font-family: var(--rubik-font);
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 22px;
+  background-color: var(--dark-brown-color);
+}
+
+.copyright_text {
+  display: flex;
+  justify-content: space-between;
 }
