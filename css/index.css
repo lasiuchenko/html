@@ -98,6 +98,7 @@ p {
 .have-question-image {
   flex: 1 300px;
   align-self: center;
+  width: 100%;
 }
 
 .have-question__item__img {
